@@ -1,5 +1,6 @@
 import React from "react";
 import './navbaragain.css';
+import {Link} from 'react-router-dom';
 
 function navbar_again(){
     
@@ -11,11 +12,14 @@ function navbar_again(){
             </div>
             <div className="nav_left">
                 <p>Best Sellers</p>
-                <p>Mobiles</p>
+                <p><Link to="/products/electronics" className="links">Mobiles</Link></p>
                 <p>Customer Service</p>
-                <p>Today's Deals</p>
-                <p>Fashion</p>
-                <p>Electronics</p>
+                
+                <p><Link to="/products" className="links">Today's Deals</Link></p>
+                
+                <p><Link to="/products/jewelery" className="links">Fashion</Link></p>
+                
+                <p><Link to="/products/electronics" className="links">Electronics</Link></p>
                 <p>Books</p>
                 <p>Prime</p>
                 <p>New Releases</p>

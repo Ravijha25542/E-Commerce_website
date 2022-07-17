@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import Searchbar from './searchbar';
 import './navbar.css';
 import { useUserAuth } from "../context/UserAuthContext";
@@ -39,9 +40,10 @@ return(
             <div className="navbar_right">
                 <p>Country Flag</p>
                 <p onClick={handleLogOut}>LogOut</p>
+                <p><Link to="/home" className="linkss">Home</Link></p>
                 <p>My Orders</p>
                 <p>Cart</p>
-                <p>Contact us</p>
+                <p><Link to="/contactUs" className="linkss" >Contact Us</Link></p>
             </div>
             
         

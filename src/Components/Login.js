@@ -3,6 +3,7 @@ import {Alert, Form} from "react-bootstrap";
 import {Button} from "react-bootstrap";
 import GoogleButton from "react-google-button";
 import './Login.css';
+import ecommerse from '../images/ecommersepage.webp'
 import {Link, useNavigate} from "react-router-dom";
 import { useUserAuth } from '../context/UserAuthContext';
 
@@ -37,9 +38,11 @@ const Login =()=>{
 
 
 return(
-    <>
+    
+        
+
     <div className='box'> 
-        <h2 >Firebase Auth Login</h2>
+        <h1 className='title'>E-Commerce</h1>
         {error && <Alert varient="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
         <Form.Group >
@@ -66,9 +69,21 @@ return(
         
     
     
-        Don't have an account? <Link to="/signup">Sign up</Link>
+       <p> Don't have an account? <Link to="/signup">Sign up</Link></p>
+       <hr />
+       <h2 className='term'>Conditions of Use
+        </h2>
+        <p>Welcome to Amazon.com. Amazon.com Services LLC and/or its affiliates ("Amazon") provide website features and other products and services to you when you visit or shop at Amazon.com, use Amazon products or services, use Amazon applications for mobile, or use software provided by Amazon in connection with any of the foregoing (collectively, "Amazon Services"). By using the Amazon Services, you agree, on behalf of yourself and all members of your household and others who use any Service under your account, to the following conditions.</p>
+
+        <h3 className='term'>OUR ADDRESS</h3>
+        <p>Amazon.com, Inc.</p>
+        <p>P.O. Box 847211</p>
+        <p>India, BR 98108-1226</p>
+        <p>https://www.amazon.com</p>
+
     </div>
-    </>
+    
+    
 )
 };
 export default Login;

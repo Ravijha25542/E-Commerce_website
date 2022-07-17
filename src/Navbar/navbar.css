@@ -3,13 +3,14 @@
 
 
 .Nav_container{
-    background-color: black;
+    background-color: RGB(19, 26, 34);
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 15px;
-    padding-bottom: 1px;
+    padding-bottom: 6px;
+    padding-top: 5px;
 
 }
 .navbar_left{
@@ -56,6 +57,16 @@ color: white;
    /* background-color: gray;
     border-radius: 15px; */
     border: 1px solid white;
+}
+.logo>h2:hover{
+    border: 1px solid white;
+}
+.address>p:hover{
+    border: 1px solid white;
+}
+.linkss{
+    text-decoration: none;
+    color: white;
 }
 
 

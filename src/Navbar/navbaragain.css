@@ -2,8 +2,8 @@
     background-color:#232F3E;
     display: flex;
     padding-left: 15px;
-    padding-top: 6px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 9px;
     
     align-items: center;
     
@@ -28,4 +28,8 @@
 .nav_left >p:hover{
     border: 1px solid white;
     
+}
+.links{
+    text-decoration: none;
+    color: white;
 }

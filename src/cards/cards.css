@@ -32,3 +32,14 @@
 .main_div{
     margin-left: 95px;
 }
+.link{
+    text-decoration: none;
+    color:darkcyan
+}
+.jewellery{
+    width: 300px;
+}
+.cloth{
+    width: 380px;
+    height: 300px;
+}

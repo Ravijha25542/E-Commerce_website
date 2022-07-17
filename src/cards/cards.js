@@ -1,15 +1,11 @@
 import React from 'react';
 import './cards.css';
-import d1i1 from '../images/cardimages/d1i1.jpg';
-import d1i2 from '../images/cardimages/d1i2.jpg';
-import d1i3 from '../images/cardimages/d1i3.jpg';
-import d1i4 from '../images/cardimages/d1i4.jpg';
+import {Link} from 'react-router-dom';
+
 import d10 from '../images/cardimages/d10.jpg';
-import d3c1 from '../images/cardimages/d3c1.jpg';
-import d3c2 from '../images/cardimages/d3c2.jpg';
-import d3c3 from '../images/cardimages/d3c3.jpg';
-import d3c4 from '../images/cardimages/d3c4.jpg';
-import d8 from '../images/cardimages/d8.jpg';
+import menscloth from '../images/cardimages/menscloth.jpg';
+import womenscloth from '../images/cardimages/womenscloth.jpg';
+import jewellery from '../images/cardimages/jewelleryimage.jpg';
 import d2c1 from '../images/cardimages/d2c1.jpg';
 import d2c2 from '../images/cardimages/d2c2.jpg';
 import d2c3 from '../images/cardimages/d2c3.jpg';
@@ -38,96 +34,60 @@ const Cards=()=>{
             <table>
                 <tr><td>
             <div className='card_container'>
-            <h2 className='l1' >Up to 70% off | Clearance store</h2>
+            <h2 className='l1' >Up to 70% off | Electronics</h2>
+            
             <div className='card1'>
-                        <img src={d10} alt=""/>
+            
+                        
+                        <Link to="/products/electronics" ><img  src={d10} alt=""  /></Link>
                     </div>
-                    <h5 className='onclick'>See more</h5>
+                    <p className='onclick'><Link to="/products/electronics" className="link">See more</Link></p>
+                    
+                    
             </div>
             </td>
             <td>
-        <div className='card_container'>
-            <h2 className='l1' >Revamp your home in style</h2>
-            <table>
-                <tr>
-                    <td>
-                    <div className='card1'>
-                        <img src={d1i1} alt=""/>
+            <div className='card_container'>
+            <h2 className='l1' >Up to 10% off | Jewellery</h2>
+            
+            <div className='card1'>
+            
+                        
+                        <Link to="/products/jewelery" ><img className='jewellery' src={jewellery} alt=""  /></Link>
                     </div>
-                    Furniture
-                    </td>
-                    <td>
-                    <div className='card1'>
-                        <img src={d1i2} alt=""/>
-                    </div>
-                    Wall design
-                    </td>
-
-                </tr>
-                <tr>
-                    <td>
-                    <div className='card1'>
-                        <img src={d1i3} alt=""/>
-                    </div>
-                    Handpicked furniture
-                     </td>
-                    <td>
-                    <div className='card1'>
-                        <img src={d1i4} alt=""/>
-                    </div>
-                    Light
-                    </td>
-                </tr>
-            </table>
-            <h5 className='onclick'>See more</h5>
-        </div>
+                    <p className='onclick'><Link to="/products/jewelery" className="link">See more</Link></p>
+                    
+                    
+            </div>
         </td>
         <td>
         <div className='card_container'>
-            <h2 className='l1' >Electronics devices for home office</h2>
-            <table>
-                <tr>
-                    <td>
-                    <div className='card1'>
-                        <img src={d3c1} alt=""/>
+            <h2 className='l1' >Up to 50% off | Women's Cloth</h2>
+            
+            <div className='card1'>
+            
+                        
+                        <Link to="/products/womensClothing" ><img className='cloth' src={womenscloth} alt=""  /></Link>
                     </div>
-                    Smartwatches 
-                    </td>
-                    <td>
-                    <div className='card1'>
-                        <img src={d3c2} alt=""/>
-                    </div>
-                    Tablets
-                    </td>
-
-                </tr>
-                <tr>
-                    <td>
-                    <div className='card1'>
-                        <img src={d3c3} alt=""/>
-                    </div>
-                    Laptops
-                     </td>
-                    <td>
-                    <div className='card1'>
-                        <img src={d3c4} alt=""/>
-                    </div>
-                    Monitors
-                    </td>
-                </tr>
-            </table>
-            <h5 className='onclick'>See more</h5>
-        </div>
+                    <p className='onclick'><Link to="/products/womensClothing" className="link">See more</Link></p>
+                    
+                    
+            </div>
 
         </td>
         </tr>
         <td>
         <div className='card_container'>
-            <h3 className='l1' >Pay your credit card bills on Amazon</h3>
+            <h2 className='l1' >Up to 60% off | Men's Cloth</h2>
+            
             <div className='card1'>
-                        <img src={d8} alt=""/>
+            
+                        
+                        <Link to="/products/mensClothing" ><img className='cloth' src={menscloth} alt=""  /></Link>
                     </div>
-                    <h5 className='onclick'>See more</h5>
+                    <p className='onclick'><Link to="/products/mensClothing" className="link">See more</Link></p>
+                    
+                    
             </div>
         </td>
         <td>
@@ -143,22 +103,27 @@ const Cards=()=>{
                     </td>
                     <td>
                     <div className='card1'>
-                        <img src={d2c2} alt=""/>
+                        
+                        <Link to="/products/electronics" ><img  src={d2c2} alt=""  /></Link>
+
                     </div>
                     Mobiles
+
                     </td>
 
                 </tr>
                 <tr>
                     <td>
                     <div className='card1'>
-                        <img src={d2c3} alt=""/>
+                        
+                        <Link to="/products" ><img  src={d2c3} alt=""  /></Link>
                     </div>
                     Fashion
                      </td>
                     <td>
                     <div className='card1'>
-                        <img src={d2c4} alt=""/>
+                        
+                        <Link to="/products/electronics" ><img  src={d2c4} alt=""  /></Link>
                     </div>
                     Electronics
                     </td>
